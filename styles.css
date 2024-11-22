@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    padding: 40px;
+    margin: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #44578f;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #44578f;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1em;
+  }
+  
+  input[type="number"], select {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #44578f;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #44578f;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #44578f;
+    color: white;
+  }
+  
+  table td {
+    background-color: #f9f9f9;
+  }
+  
+  #tablaEntrada {
+    margin-top: 30px;
+  }
+  
+  #resultado {
+    display: none;
+    margin-top: 30px;
+  }
+  
+  #resultado h2 {
+    font-size: 1.8em;
+    color: #44578f;
+  }
+  
+  #costoTotal {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    input, select, button {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    table th, table td {
+      font-size: 0.9em;
+    }
+  }
+  

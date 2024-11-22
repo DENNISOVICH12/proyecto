@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Problemas de Transporte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Problemas de Transporte</h1>
+    <form id="transporteForm">
+      <label for="fuentes">Número de fuentes:</label>
+      <input type="number" id="fuentes" min="1" value="3" required>
+      <br>
+      <label for="destinos">Número de destinos:</label>
+      <input type="number" id="destinos" min="1" value="3" required>
+      <br>
+      <label for="metodo">Método de resolución:</label>
+      <select id="metodo">
+        <option value="esquinaNoroeste">Esquina Noroeste</option>
+        <option value="costeMinimo">Coste Mínimo</option>
+      </select>
+      <br>
+      <button type="button" id="generarTabla">Generar Tabla</button>
+    </form>
+
+    <div id="tablaEntrada" style="display: none;">
+      <h2>Datos del Problema</h2>
+      <div id="matrizCostos"></div>
+      <button id="calcular">Calcular</button>
+    </div>
+
+    <div id="resultado" style="display: none;">
+      <h2>Resultados</h2>
+      <div id="asignaciones"></div>
+      <p id="costoTotal"></p>
+    </div>
+  </div>
+
+  <!-- Inclusión de la librería GLPK.js -->
+  <script src="https://cdn.jsdelivr.net/npm/glpk.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
